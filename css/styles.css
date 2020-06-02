@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #f2eccf;
+  background-color: #222;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -25,7 +25,7 @@ body {
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #f2eccf;
+  color: #222;
   font-size: 2.2em;
   text-transform: uppercase;
   font-weight: bold;
@@ -42,7 +42,7 @@ body {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #f2eccf;
+  color: #222;
   text-align: center;
 }
 #nav-list a:hover {
@@ -138,6 +138,33 @@ body {
 }
 /* END FOOTER */
 
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .jumbotron{
@@ -199,9 +226,9 @@ body {
     display: block;
     margin: 0 20px;
     padding: 10px;
-    border: 2px solid #f2eccf;
+    border: 2px solid #222;
     background-color: #cc1d1d;
-    color: #f2eccf;
+    color: #222;
   }
   #xs-deliver {
     margin-top: 5px;
@@ -229,7 +256,15 @@ body {
   /* Home page */
   #menu-tile, #specials-tile {
     width: 280px;
-    margin: 0 auto 15px;
+    margin: 0 auto 1]5px;
+  }
+   .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
 
